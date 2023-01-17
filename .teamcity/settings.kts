@@ -154,7 +154,7 @@ object Subpr1 : Project({
 
     buildType(Subpr1_B131)
     buildType(Subpr1_B121)
-    buildType(Subpr1_Bx)
+    buildType(Subpr1_B1x)
     buildType(mygradle2)
 })
 
