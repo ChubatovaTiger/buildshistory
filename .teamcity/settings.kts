@@ -178,7 +178,7 @@ object Subpr1_B11111 : BuildType({
     }
 
     dependencies {
-        snapshot(AbsoluteId("id74019_Project2_Subpr1_B11")) {
+        snapshot(Subpr1_B121) {
         }
     }
 })
