@@ -12,5 +12,9 @@ in the project with id = 'Subpr1', and delete the patch script.
 create(RelativeId("Subpr1"), BuildType({
     id("Subpr1_B1")
     name = "b1"
+
+    params {
+        param("abc", "abc")
+    }
 }))
 
