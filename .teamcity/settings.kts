@@ -32,7 +32,7 @@ project {
     buildType(Build20)
     buildType(Build2_2)
     buildType(Build2111nas)
-    buildType(Build1xnas)
+    buildType(Build1xnas1)
 
     features {
         s3Storage {
@@ -52,13 +52,13 @@ project {
     }
 }
 
-object Build1xnas : BuildType({
+object Build1xnas1 : BuildType({
     name = "build1 (1)"
 
     artifactRules = "+:*.txt => ."
 
     params {
-        param("a", "a")
+        param("a", "an")
     }
 
     vcs {
