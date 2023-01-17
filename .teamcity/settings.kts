@@ -31,7 +31,7 @@ project {
 
     buildType(Build20)
     buildType(Build2_2)
-    buildType(Build2111)
+    buildType(Build2111nas)
     buildType(Build1x)
 
     features {
@@ -98,7 +98,7 @@ object Build20 : BuildType({
     }
 })
 
-object Build2111 : BuildType({
+object Build2111nas : BuildType({
     name = "build2"
 
     artifactRules = "+:*.txt => ."
