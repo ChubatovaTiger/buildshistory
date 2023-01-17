@@ -28,10 +28,10 @@ version = "2022.10"
 project {
 
     buildType(Build2)
-    buildType(Build111)
+    buildType(Build112)
 }
 
-object Build111 : BuildType({
+object Build112 : BuildType({
     name = "build1"
 
     artifactRules = "+:*.txt => ."
