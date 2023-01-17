@@ -27,5 +27,10 @@ create(DslContext.projectId, BuildType({
             scriptContent = "echo a > %build.counter%.txt"
         }
     }
+
+    dependencies {
+        snapshot(RelativeId("Build111")) {
+        }
+    }
 }))
 
