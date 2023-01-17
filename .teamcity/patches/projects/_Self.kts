@@ -2,6 +2,7 @@ package patches.projects
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.Project
+import jetbrains.buildServer.configs.kotlin.projectFeatures.activeStorage
 import jetbrains.buildServer.configs.kotlin.projectFeatures.s3Storage
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -22,6 +23,12 @@ changeProject(DslContext.projectId) {
                 }
                 accessKeyID = "AKIA5JH2VERVHVMPJQJI"
                 accessKey = "credentialsJSON:c7a2cd00-90f2-414a-876e-a5cb4bc3236d"
+            }
+        }
+        add {
+            activeStorage {
+                id = "PROJECT_EXT_53"
+                activeStorageID = "PROJECT_EXT_52"
             }
         }
     }
