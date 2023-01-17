@@ -30,6 +30,7 @@ create(DslContext.projectId, BuildType({
 
     dependencies {
         snapshot(RelativeId("Build111")) {
+            reuseBuilds = ReuseBuilds.NO
         }
     }
 }))
