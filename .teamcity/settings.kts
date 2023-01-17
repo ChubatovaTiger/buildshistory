@@ -154,11 +154,11 @@ object Subpr1 : Project({
 
     buildType(Subpr1_B131)
     buildType(Subpr1_B121)
-    buildType(Subpr1_B111111)
+    buildType(Subpr1_Bx)
     buildType(mygradle2)
 })
 
-object Subpr1_B111111 : BuildType({
+object Subpr1_B1x : BuildType({
     name = "b11"
 
     type = BuildTypeSettings.Type.COMPOSITE
