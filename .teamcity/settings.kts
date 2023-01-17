@@ -27,7 +27,7 @@ object Build1130xyzn : BuildType({
 
     steps {
         script {
-            scriptContent = "echo a > %build.counter%.txt"
+            scriptContent = "echo hi"
         }
     }
 })
