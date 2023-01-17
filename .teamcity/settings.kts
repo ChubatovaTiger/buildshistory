@@ -155,7 +155,7 @@ object Subpr1 : Project({
     buildType(Subpr1_B131)
     buildType(Subpr1_B121)
     buildType(Subpr1_B11)
-    buildType(Subpr1_Gradle)
+    buildType(mygradle)
 })
 
 object Subpr1_B11 : BuildType({
@@ -200,7 +200,7 @@ object Subpr1_B131 : BuildType({
     }
 })
 
-object Subpr1_Gradle : BuildType({
+object mygradle : BuildType({
     name = "gradle"
 
     vcs {
