@@ -27,6 +27,7 @@ version = "2022.10"
 
 project {
 
+    buildType(Build2_2)
     buildType(Build2)
     buildType(Build1130xyznc2o)
 }
@@ -55,6 +56,30 @@ object Build1130xyznc2o : BuildType({
 
 object Build2 : BuildType({
     name = "build2"
+
+    artifactRules = "+:*.txt => ."
+
+    vcs {
+        root(DslContext.settingsRoot)
+
+        cleanCheckout = true
+    }
+
+    steps {
+        script {
+            scriptContent = "echo a > %build.counter%.txt"
+        }
+    }
+
+    cleanup {
+        baseRule {
+            history(builds = 2)
+        }
+    }
+})
+
+object Build2_2 : BuildType({
+    name = "build2 (1)"
 
     artifactRules = "+:*.txt => ."
 
