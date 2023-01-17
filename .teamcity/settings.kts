@@ -111,7 +111,7 @@ object Build2111 : BuildType({
 
     steps {
         script {
-            scriptContent = "ping 127.0.0.1 -n 200 > nul"
+            scriptContent = "ping 127.0.0.1 -n 2 > nul"
         }
     }
 
