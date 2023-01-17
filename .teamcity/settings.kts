@@ -148,7 +148,7 @@ object Subpr1 : Project({
     name = "subpr1"
 
     buildType(Subpr1_B11)
-    buildType(Subpr1_B12)
+    buildType(Subpr1_B121)
     buildType(Subpr1_B131)
 })
 
@@ -165,7 +165,7 @@ object Subpr1_B11 : BuildType({
         }
     }
 })
-object Subpr1_B12 : BuildType({
+object Subpr1_B121 : BuildType({
     name = "b12"
 
     params {
