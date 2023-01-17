@@ -67,7 +67,7 @@ object Build2 : BuildType({
 
     steps {
         script {
-            scriptContent = "echo a > %build.counter%.txt"
+            scriptContent = "sleep 300"
         }
     }
 
