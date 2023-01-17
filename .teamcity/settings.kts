@@ -11,7 +11,7 @@ project {
 
 object Build11 : BuildType({
     name = "build1"
-    id = "id74019_Project1_Build11"
+  
     vcs {
         root(DslContext.settingsRoot)
     }
