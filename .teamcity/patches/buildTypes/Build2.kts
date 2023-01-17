@@ -29,8 +29,14 @@ create(DslContext.projectId, BuildType({
     }
 
     dependencies {
-        snapshot(RelativeId("Build111")) {
-            reuseBuilds = ReuseBuilds.NO
+        dependency(RelativeId("Build111")) {
+            snapshot {
+                reuseBuilds = ReuseBuilds.NO
+            }
+
+            artifacts {
+                artifactRules = "+:*=>."
+            }
         }
     }
 }))
