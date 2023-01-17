@@ -36,11 +36,7 @@ object Build112 : BuildType({
 
     artifactRules = "+:*.txt => ."
 
-    vcs {
-        root(DslContext.settingsRoot)
 
-        cleanCheckout = true
-    }
 
     steps {
         script {
