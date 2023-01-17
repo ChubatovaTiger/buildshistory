@@ -28,15 +28,19 @@ version = "2022.10"
 project {
 
     buildType(Build2)
-    buildType(Build112)
+    buildType(Build113)
 }
 
-object Build112 : BuildType({
+object Build113 : BuildType({
     name = "build1"
 
     artifactRules = "+:*.txt => ."
 
+    vcs {
+        root(DslContext.settingsRoot)
 
+        cleanCheckout = true
+    }
 
     steps {
         script {
@@ -63,7 +67,7 @@ object Build2 : BuildType({
     }
 
     dependencies {
-        dependency(Build112) {
+        dependency(Build113) {
             snapshot {
                 reuseBuilds = ReuseBuilds.NO
             }
