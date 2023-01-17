@@ -35,6 +35,7 @@ create(DslContext.projectId, BuildType({
             }
 
             artifacts {
+                cleanDestination = true
                 artifactRules = "+:*=>."
             }
         }
