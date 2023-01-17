@@ -6,7 +6,7 @@ version = "2022.10"
 
 project {
 
-    buildType(Build210xyz)
+    buildType(Build210xyz0)
     buildType(Build1130xyz)
 }
 
