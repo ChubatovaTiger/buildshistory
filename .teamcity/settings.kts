@@ -148,9 +148,37 @@ object Subpr1 : Project({
     name = "subpr1"
 
     buildType(Subpr1_B11)
+    buildType(Subpr1_B12)
+    buildType(Subpr1_B13)
 })
 
 object Subpr1_B11 : BuildType({
+    name = "b1"
+
+    params {
+        param("abc", "x")
+    }
+
+    steps {
+        script {
+            scriptContent = "echo hi"
+        }
+    }
+})
+object Subpr1_B12 : BuildType({
+    name = "b1"
+
+    params {
+        param("abc", "x")
+    }
+
+    steps {
+        script {
+            scriptContent = "echo hi"
+        }
+    }
+})
+object Subpr1_B13 : BuildType({
     name = "b1"
 
     params {
