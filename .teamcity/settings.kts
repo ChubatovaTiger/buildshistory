@@ -176,6 +176,11 @@ object Subpr1_B1111 : BuildType({
             scriptContent = "echo hi"
         }
     }
+
+    dependencies {
+        snapshot(Subpr1_B121) {
+        }
+    }
 })
 
 object Subpr1_B121 : BuildType({
