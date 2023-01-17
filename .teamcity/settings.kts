@@ -153,7 +153,7 @@ object Subpr1 : Project({
 })
 
 object Subpr1_B11 : BuildType({
-    name = "b1"
+    name = "b11"
 
     params {
         param("abc", "x")
@@ -166,7 +166,7 @@ object Subpr1_B11 : BuildType({
     }
 })
 object Subpr1_B12 : BuildType({
-    name = "b1"
+    name = "b12"
 
     params {
         param("abc", "x")
@@ -179,7 +179,7 @@ object Subpr1_B12 : BuildType({
     }
 })
 object Subpr1_B13 : BuildType({
-    name = "b1"
+    name = "b13"
 
     params {
         param("abc", "x")
