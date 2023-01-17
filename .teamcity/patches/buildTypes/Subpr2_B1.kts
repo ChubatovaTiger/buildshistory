@@ -2,6 +2,7 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.BuildType
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -15,6 +16,12 @@ create(RelativeId("Subpr2"), BuildType({
 
     params {
         param("abc", "x")
+    }
+
+    steps {
+        script {
+            scriptContent = "echo hi"
+        }
     }
 }))
 
