@@ -15,7 +15,7 @@ create(RelativeId("Subpr1"), BuildType({
     name = "b1"
 
     params {
-        param("abc", "abc")
+        param("abc", "x")
     }
 
     steps {
