@@ -36,6 +36,10 @@ object Build113 : BuildType({
 
     artifactRules = "+:*.txt => ."
 
+    params {
+        param("a", "a")
+    }
+
     vcs {
         root(DslContext.settingsRoot)
 
