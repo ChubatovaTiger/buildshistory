@@ -32,7 +32,7 @@ project {
     buildType(Build20)
     buildType(Build2_2)
     buildType(Build2111nas)
-    buildType(Build1xnas1)
+    buildType(Build1xnas12)
 
     features {
         s3Storage {
@@ -52,14 +52,10 @@ project {
     }
 }
 
-object Build1xnas1 : BuildType({
-    name = "build1 (1)"
+object Build1xnas12 : BuildType({
+    name = "build1 (0)"
 
-    artifactRules = "+:*.txt => ."
 
-    params {
-        param("a", "an")
-    }
 
     vcs {
         root(DslContext.settingsRoot)
