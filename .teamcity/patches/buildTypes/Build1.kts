@@ -28,7 +28,7 @@ create(DslContext.projectId, BuildType({
 
     steps {
         script {
-            scriptContent = "echo hi"
+            scriptContent = "echo hi > %build.counter%.txt"
         }
     }
 }))
