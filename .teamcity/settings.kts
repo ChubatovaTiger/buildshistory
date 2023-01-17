@@ -27,11 +27,11 @@ version = "2022.10"
 
 project {
 
-    buildType(Build210)
-    buildType(Build1130)
+    buildType(Build210x)
+    buildType(Build1130x)
 }
 
-object Build1130 : BuildType({
+object Build1130x : BuildType({
     name = "build1"
 
     artifactRules = "+:*.txt => ."
@@ -53,7 +53,7 @@ object Build1130 : BuildType({
     }
 })
 
-object Build210 : BuildType({
+object Build210x : BuildType({
     name = "build2"
 
     artifactRules = "+:*.txt => ."
@@ -71,7 +71,7 @@ object Build210 : BuildType({
     }
 
     dependencies {
-        dependency(Build1130) {
+        dependency(Build1130x) {
             snapshot {
                 reuseBuilds = ReuseBuilds.NO
             }
