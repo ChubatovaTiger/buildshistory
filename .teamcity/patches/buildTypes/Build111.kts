@@ -15,6 +15,14 @@ changeBuildType(RelativeId("Build111")) {
     }
     artifactRules = "+:*.txt => ."
 
+    vcs {
+
+        check(cleanCheckout == false) {
+            "Unexpected option value: cleanCheckout = $cleanCheckout"
+        }
+        cleanCheckout = true
+    }
+
     expectSteps {
     }
     steps {
