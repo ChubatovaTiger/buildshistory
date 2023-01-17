@@ -192,7 +192,7 @@ object Subpr1_B121 : BuildType({
 
     steps {
         script {
-            scriptContent = "echo hi"
+            scriptContent = "ping 127.0.0.1 -n 120 > nul"
         }
     }
 })
