@@ -6,10 +6,10 @@ version = "2022.10"
 
 project {
 
-    buildType(Build11)
+    buildType(Build111)
 }
 
-object Build11 : BuildType({
+object Build111 : BuildType({
     name = "build1"
   
     vcs {
