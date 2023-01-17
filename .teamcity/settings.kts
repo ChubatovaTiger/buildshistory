@@ -161,8 +161,14 @@ object Subpr1 : Project({
 object Subpr1_B11 : BuildType({
     name = "b11"
 
+    type = BuildTypeSettings.Type.COMPOSITE
+
     params {
         param("abc", "x")
+    }
+
+    vcs {
+        showDependenciesChanges = true
     }
 
     steps {
