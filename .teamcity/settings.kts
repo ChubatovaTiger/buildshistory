@@ -6,8 +6,8 @@ version = "2022.10"
 
 project {
 
-    buildType(Build210xyz0nc)
-    buildType(Build1130xyzn)
+    buildType(Build210xyz0n)
+    buildType(Build1130xyznc)
 }
 
 object Build1130xyznc : BuildType({
