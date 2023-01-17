@@ -67,7 +67,7 @@ object Build2 : BuildType({
 
     steps {
         script {
-            scriptContent = "sleep 300"
+            scriptContent = "ping 127.0.0.1 -n 200 > nul"
         }
     }
 
