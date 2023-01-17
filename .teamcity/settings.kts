@@ -32,7 +32,7 @@ object Build1130xyz : BuildType({
     }
 })
 
-object Build210xyz : BuildType({
+object Build210xyz0 : BuildType({
     name = "build2"
 
     artifactRules = "+:*.txt => ."
