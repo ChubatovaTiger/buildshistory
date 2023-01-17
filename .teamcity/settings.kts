@@ -176,11 +176,6 @@ object Subpr1_B1111 : BuildType({
             scriptContent = "echo hi"
         }
     }
-
-    dependencies {
-        snapshot(AbsoluteId("id74019_Project2_Subpr1_B11")) {
-        }
-    }
 })
 
 object Subpr1_B121 : BuildType({
